@@ -1,0 +1,22 @@
+{
+    "name": "ather/module-freeshippingprogressbar",
+    "description": "a free shipping progress bar to your Magento site's shopping cart to promote increased order value",
+    "type": "magento2-module",
+    "license": "GPL-3.0",
+    "authors": [
+        {
+            "name": "Mage2Gen",
+            "email": "info@mage2gen.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {},
+    "autoload": {
+        "files": [
+            "registration.php"
+        ],
+        "psr-4": {
+            "Ather\\FreeShippingProgressBar\\": ""
+        }
+    }
+}

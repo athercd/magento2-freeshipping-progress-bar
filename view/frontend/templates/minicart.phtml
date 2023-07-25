@@ -1,0 +1,16 @@
+<?php
+$isShowOnMiniCart = $block->isShowOnMiniCart();
+$isOrderEligibleForFreeShipping = $block->isOrderEligibleForFreeShipping();
+?>
+<?php if ($isShowOnMiniCart && !$isOrderEligibleForFreeShipping): ?>
+    <div class="freeshipping-progress-container-mini">
+        <div class="freeshipping-progress-bar-mini" style="width: <?= $progressPercentage ?>%; background: linear-gradient(to right, #00ff00 0%, #00ff00 <?= $progressPercentage ?>%, transparent <?= $progressPercentage ?>%, transparent 100%);"></div>
+        <div class="freeshipping-progress-label-mini">
+            <?= $block->escapeHtml(__('Progress: %1 %2/%3 %4', $currencyCode, $progressAmount, $minimumOrderTotal, $currencyCode)) ?>
+        </div>
+    </div>
+<?php elseif ($isOrderEligibleForFreeShipping): ?>
+    <div class="freeshipping-progress-text-mini">
+        <?= $block->escapeHtml(__('Your Order is eligible for Free Shipping')) ?>
+    </div>
+<?php endif; ?>

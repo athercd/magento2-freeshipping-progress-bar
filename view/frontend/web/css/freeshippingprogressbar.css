@@ -1,0 +1,51 @@
+.freeshipping-progress-container {
+    height: 10px;
+    width: 100%;
+    background-color: #ccc;
+    border-radius: 5px;
+    overflow: hidden;
+    margin-bottom: 10px;
+}
+
+.freeshipping-progress-bar {
+    height: 100%;
+    background: linear-gradient(to right, #00ff00 0%, #00ff00 100%);
+    transition: width 0.5s ease-in-out;
+}
+
+.freeshipping-progress-label {
+    font-size: 12px;
+    text-align: right;
+    margin-top: 5px;
+}
+
+/* Styles for the mini cart progress bar */
+.freeshipping-progress-container-mini {
+    height: 5px;
+    width: 100%;
+    background-color: #ccc;
+    border-radius: 5px;
+    overflow: hidden;
+    margin-bottom: 5px;
+}
+
+.freeshipping-progress-bar-mini {
+    height: 100%;
+    background: linear-gradient(to right, #00ff00 0%, #00ff00 100%);
+    transition: width 0.5s ease-in-out;
+}
+
+.freeshipping-progress-label-mini {
+    font-size: 10px;
+    text-align: right;
+    margin-top: 3px;
+}
+
+.freeshipping-progress-text-mini {
+    height: 100%;
+    background-color: #00ff00;
+    text-align: center;
+    line-height: 5px;
+    font-size: 10px;
+    color: #fff;
+}
